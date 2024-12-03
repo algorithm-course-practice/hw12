@@ -28,8 +28,10 @@ public class HomeWork {
             String s = scanner.nextLine();
             if (DIRTY_ALGORITHM) {
                 result.append(minimumJump(s)).append("\n");
+            } else {
+                result.append(minimumJumpUsingTree(s)).append("\n");
             }
-            result.append(minimumJumpUsingTree(s)).append("\n");
+
         }
 
         out.write(result.toString().getBytes());
